@@ -4,7 +4,7 @@
   "description": "ALGOR programlama dili için VS Code desteği",
   "icon": "algor-logo-128.png",
   "version": "0.1.0",
-  "publisher": "algor",
+  "publisher": "AlgorProgramming",
   "engines": {
     "vscode": "^1.80.0"
   },
