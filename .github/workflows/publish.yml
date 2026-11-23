@@ -21,4 +21,4 @@ jobs:
 
       - name: Publish to VS Code Marketplace
         working-directory: vscode-extension
-        run: npx --yes @vscode/vsce@4.0.2 publish --oidc
+        run: npx --yes @vscode/vsce@4.1.1 publish --oidc
