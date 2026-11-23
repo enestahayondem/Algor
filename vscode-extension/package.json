@@ -1,9 +1,9 @@
 {
   "name": "algor-language",
-  "displayName": "ALGOR Language Support",
+  "displayName": "ALGOR Programming Language",
   "description": "ALGOR programlama dili için VS Code desteği",
   "icon": "algor-logo-128.png",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "AlgorProgramming",
   "engines": {
     "vscode": "^1.80.0"
