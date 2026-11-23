@@ -1,4 +1,3 @@
-
 {
   "name": "algor-language",
   "displayName": "ALGOR Language Support",
@@ -33,5 +32,11 @@
         "path": "./syntaxes/algor.tmLanguage.json"
       }
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enestahayondem/Algor.git"
+  },
+  "license": "MIT",
+  "pricing": "Free"
 }

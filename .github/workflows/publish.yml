@@ -1,0 +1,24 @@
+name: Publish ALGOR Extension
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publish to VS Code Marketplace
+        working-directory: vscode-extension
+        run: npx --yes @vscode/vsce@4.0.2 publish --oidc
