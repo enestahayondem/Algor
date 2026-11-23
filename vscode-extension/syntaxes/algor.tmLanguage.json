@@ -1,0 +1,43 @@
+
+{
+  "scopeName": "source.algor",
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.algor",
+      "match": "//.*$"
+    },
+    {
+      "name": "string.quoted.double.algor",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "constant.numeric.algor",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+    {
+      "name": "keyword.control.algor",
+      "match": "\\b(eger|degilse|döngü|icin|iken|fonksiyon|dondur|bitir)\\b"
+    },
+    {
+      "name": "storage.type.algor",
+      "match": "\\b(sayi|metin|mantik)\\b"
+    },
+    {
+      "name": "support.function.algor",
+      "match": "\\b(yaz)\\b"
+    },
+    {
+      "name": "constant.language.boolean.algor",
+      "match": "\\b(dogru|yanlis)\\b"
+    },
+    {
+      "name": "keyword.operator.algor",
+      "match": "==|!=|<=|>=|=|\\+|-|\\*|/|<|>"
+    },
+    {
+      "name": "variable.other.algor",
+      "match": "\\b[a-zA-Z_ğüşöçıİĞÜŞÖÇ][a-zA-Z0-9_ğüşöçıİĞÜŞÖÇ]*\\b"
+    }
+  ]
+}

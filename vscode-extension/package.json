@@ -1,0 +1,37 @@
+
+{
+  "name": "algor-language",
+  "displayName": "ALGOR Language Support",
+  "description": "ALGOR programlama dili için VS Code desteği",
+  "icon": "algor-logo-128.png",
+  "version": "0.1.0",
+  "publisher": "algor",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "algor",
+        "aliases": [
+          "ALGOR",
+          "algor"
+        ],
+        "extensions": [
+          ".algor"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "algor",
+        "scopeName": "source.algor",
+        "path": "./syntaxes/algor.tmLanguage.json"
+      }
+    ]
+  }
+}

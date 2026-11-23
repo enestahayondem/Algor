@@ -1,0 +1,21 @@
+
+{
+  "name": "algor",
+  "version": "0.1.0",
+  "description": "ALGOR - Turkish general purpose programming language",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "algor": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "algor",
+    "programming-language",
+    "interpreter"
+  ],
+  "license": "MIT"
+}

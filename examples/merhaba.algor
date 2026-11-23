@@ -1,0 +1,6 @@
+sayi yas = 18
+sayi sayi1 = 10
+sayi sonuc = yas + sayi1
+
+yaz(yas)
+yaz(sonuc)
