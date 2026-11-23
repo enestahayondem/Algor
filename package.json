@@ -1,7 +1,6 @@
-
 {
   "name": "algor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ALGOR - Turkish general purpose programming language",
   "type": "module",
   "main": "src/cli.js",
@@ -17,5 +16,6 @@
     "programming-language",
     "interpreter"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "displayName": "ALGOR Programming Language"
 }
