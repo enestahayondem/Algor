@@ -1,5 +1,5 @@
 {
-  "name": "algor",
+  "name": "@enestaha/algor",
   "version": "1.0.0",
   "description": "ALGOR - Turkish general purpose programming language",
   "type": "module",
