@@ -1,6 +1,6 @@
 {
   "name": "algor",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "ALGOR - Turkish general purpose programming language",
   "type": "module",
   "main": "src/cli.js",
@@ -17,5 +17,15 @@
     "interpreter"
   ],
   "license": "MIT",
-  "displayName": "ALGOR Programming Language"
+  "displayName": "ALGOR Programming Language",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enestahayondem/Algor.git"
+  },
+  "files": [
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ]
 }

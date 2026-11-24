@@ -1,0 +1,9 @@
+aktar "matematik.algor"
+
+sayi toplam = topla(10, 20)
+sayi carpim = carp(5, 6)
+sayi sonuc = kare(8)
+
+yaz("Toplama:", toplam)
+yaz("Çarpma:", carpim)
+yaz("Kare:", sonuc)

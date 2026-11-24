@@ -1,0 +1,18 @@
+sayi[] notlar = [80, 90, 100]
+
+yaz("İlk not:", notlar[0])
+yaz("İkinci not:", notlar[1])
+yaz("Üçüncü not:", notlar[2])
+
+notlar[2] = 95
+
+yaz("Güncellenmiş not:", notlar[2])
+
+sayi toplam = notlar[0] + notlar[1] + notlar[2]
+yaz("Toplam:", toplam)
+
+metin[] isimler = ["Ali", "Ayşe", "Mehmet"]
+yaz("İlk öğrenci:", isimler[0])
+
+mantik[] durumlar = [dogru, yanlis]
+yaz("İlk durum:", durumlar[0])

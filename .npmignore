@@ -1,0 +1,10 @@
+**/*.bak
+**/*.modul-yedek
+**/*.tmp
+tests/
+testler/
+vscode-extension/
+vscode-modul-testi/
+coklu-yaz.algor
+deneme.algor
+input-test.algor

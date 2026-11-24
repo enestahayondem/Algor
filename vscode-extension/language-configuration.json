@@ -1,4 +1,3 @@
-
 {
   "comments": {
     "lineComment": "//"
@@ -19,5 +18,10 @@
     ["[", "]"],
     ["(", ")"],
     ["\"", "\""]
-  ]
+  ],
+  "wordPattern": "[\\p{L}_][\\p{L}\\p{N}_]*",
+  "indentationRules": {
+    "increaseIndentPattern": "^.*\\{\\s*$",
+    "decreaseIndentPattern": "^\\s*\\}"
+  }
 }

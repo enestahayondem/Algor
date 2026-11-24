@@ -1,15 +1,21 @@
 {
   "name": "algor-language",
   "displayName": "ALGOR Programming Language",
-  "description": "ALGOR programlama dili için VS Code desteği",
+  "description": "ALGOR programlama dili için resmi VS Code desteği",
   "icon": "algor-logo-128.png",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "publisher": "AlgorProgramming",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "algor",
+    "programming",
+    "turkish",
+    "language"
   ],
   "contributes": {
     "languages": [
@@ -31,12 +37,67 @@
         "scopeName": "source.algor",
         "path": "./syntaxes/algor.tmLanguage.json"
       }
-    ]
+    ],
+    "snippets": [
+      {
+        "language": "algor",
+        "path": "./snippets/algor.code-snippets"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "algor-icon-theme",
+        "label": "ALGOR File Icons",
+        "path": "./icons/algor-icon-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "algor.runFile",
+        "title": "ALGOR: Dosyayı Çalıştır",
+        "icon": "$(play)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "algor.runFile",
+        "key": "alt+cmd+r",
+        "mac": "alt+cmd+r",
+        "when": "editorTextFocus && editorLangId == algor"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "algor.runFile",
+          "when": "editorLangId == algor",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "algor.runFile",
+          "when": "editorLangId == algor",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "algor.runFile",
+          "when": "resourceExtname == .algor",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/enestahayondem/Algor.git"
   },
   "license": "MIT",
-  "pricing": "Free"
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:algor",
+    "onCommand:algor.runFile"
+  ]
 }

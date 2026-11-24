@@ -1,0 +1,34 @@
+yaz("========== DONGU ==========")
+
+sayi sayac = 1
+
+dongu sayac <= 5 {
+    yaz("Sayaç:", sayac)
+    sayac = sayac + 1
+}
+
+yaz("========== HER ==========")
+
+sayi[] sayilar = [10, 20, 30, 40, 50]
+
+her eleman icinde sayilar {
+    yaz("Eleman:", eleman)
+}
+
+yaz("========== DEVAM ==========")
+
+her eleman icinde sayilar {
+    eger eleman == 30 {
+        devam
+    }
+    yaz(eleman)
+}
+
+yaz("========== KIR ==========")
+
+her eleman icinde sayilar {
+    eger eleman == 40 {
+        kir
+    }
+    yaz(eleman)
+}

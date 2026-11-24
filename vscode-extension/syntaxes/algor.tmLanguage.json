@@ -1,43 +1,76 @@
-
 {
-  "scopeName": "source.algor",
-  "patterns": [
-    {
-      "name": "comment.line.double-slash.algor",
-      "match": "//.*$"
-    },
-    {
-      "name": "string.quoted.double.algor",
-      "begin": "\"",
-      "end": "\""
-    },
-    {
-      "name": "constant.numeric.algor",
-      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
-    },
-    {
-      "name": "keyword.control.algor",
-      "match": "\\b(eger|degilse|döngü|icin|iken|fonksiyon|dondur|bitir)\\b"
-    },
-    {
-      "name": "storage.type.algor",
-      "match": "\\b(sayi|metin|mantik)\\b"
-    },
-    {
-      "name": "support.function.algor",
-      "match": "\\b(yaz)\\b"
-    },
-    {
-      "name": "constant.language.boolean.algor",
-      "match": "\\b(dogru|yanlis)\\b"
-    },
-    {
-      "name": "keyword.operator.algor",
-      "match": "==|!=|<=|>=|=|\\+|-|\\*|/|<|>"
-    },
-    {
-      "name": "variable.other.algor",
-      "match": "\\b[a-zA-Z_ğüşöçıİĞÜŞÖÇ][a-zA-Z0-9_ğüşöçıİĞÜŞÖÇ]*\\b"
-    }
-  ]
+    "scopeName": "source.algor",
+    "patterns": [
+        {
+            "name": "keyword.control.module.algor",
+            "match": "\\b(aktar|disari)\\b"
+        },
+        {
+            "name": "comment.line.double-slash.algor",
+            "match": "//.*$"
+        },
+        {
+            "name": "string.quoted.double.algor",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.algor",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        {
+            "name": "constant.numeric.algor",
+            "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+        },
+        {
+            "name": "constant.language.boolean.algor",
+            "match": "\\b(dogru|yanlis)\\b"
+        },
+        {
+            "name": "storage.type.algor",
+            "match": "\\b(sayi|metin|mantik)\\b"
+        },
+        {
+            "name": "keyword.control.algor",
+            "match": "\\b(eger|degilse|dongu|her|icinde|kir|devam|sec|durum|varsayilan)\\b"
+        },
+        {
+            "name": "keyword.operator.logical.algor",
+            "match": "\\b(ve|veya|degil)\\b"
+        },
+        {
+            "name": "support.function.algor",
+            "match": "\\b(yaz|oku|uzunluk|ekle|sil|aralik|rastgele)\\b"
+        },
+        {
+            "name": "keyword.operator.algor",
+            "match": "==|!=|<=|>=|=|\\+|-|\\*|/|%|<|>"
+        },
+        {
+            "name": "punctuation.section.block.begin.algor",
+            "match": "\\{"
+        },
+        {
+            "name": "punctuation.section.block.end.algor",
+            "match": "\\}"
+        },
+        {
+            "name": "keyword.operator.arithmetic.algor",
+            "match": "\\bmod\\b"
+        },
+        {
+            "name": "variable.other.algor",
+            "match": "[\\p{L}_][\\p{L}\\p{N}_]*"
+        },
+        {
+            "name": "storage.type.function.algor",
+            "match": "\\bfonksiyon\\b"
+        },
+        {
+            "name": "keyword.control.return.algor",
+            "match": "\\bdondur\\b"
+        }
+    ]
 }

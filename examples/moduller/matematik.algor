@@ -1,0 +1,11 @@
+disari fonksiyon topla(sayi a, sayi b) {
+    dondur a + b
+}
+
+disari fonksiyon carp(sayi a, sayi b) {
+    dondur a * b
+}
+
+disari fonksiyon kare(sayi sayiDeger) {
+    dondur sayiDeger * sayiDeger
+}

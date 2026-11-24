@@ -1,0 +1,40 @@
+sayi yas = 20
+
+eger yas >= 18 {
+    yaz("Reşitsiniz.")
+} degilse {
+    yaz("Reşit değilsiniz.")
+}
+
+sayi not = 85
+
+eger not >= 90 {
+    yaz("Not: A")
+} degilse {
+    eger not >= 80 {
+        yaz("Not: B")
+    } degilse {
+        eger not >= 70 {
+            yaz("Not: C")
+        } degilse {
+            yaz("Not: D")
+        }
+    }
+}
+
+sayi gun = 2
+
+sec gun {
+    durum 1 {
+        yaz("Pazartesi")
+    }
+    durum 2 {
+        yaz("Salı")
+    }
+    durum 3 {
+        yaz("Çarşamba")
+    }
+    varsayilan {
+        yaz("Bilinmeyen gün")
+    }
+}

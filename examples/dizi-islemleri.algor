@@ -1,0 +1,26 @@
+sayi[] notlar = [75, 90, 85, 60, 95]
+
+yaz("Başlangıç notları:")
+her not icinde notlar {
+    yaz(not)
+}
+
+sayi toplam = 0
+her not icinde notlar {
+    toplam = toplam + not
+}
+
+sayi ortalama = toplam / uzunluk(notlar)
+yaz("Not toplamı:", toplam)
+yaz("Not ortalaması:", ortalama)
+
+ekle(notlar, 100)
+yaz("Yeni eleman eklendi. Eleman sayısı:", uzunluk(notlar))
+
+sil(notlar, 3)
+yaz("Dördüncü eleman silindi.")
+
+yaz("Güncel notlar:")
+her not icinde notlar {
+    yaz(not)
+}

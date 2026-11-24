@@ -1,0 +1,197 @@
+{
+    "ALGOR Başlangıç Programı": {
+        "prefix": "algor",
+        "body": [
+            "// ========================================",
+            "// ALGOR PROGRAMLAMA DİLİ",
+            "// İlk programına hoş geldin!",
+            "// ========================================",
+            "",
+            "// 1. DEĞİŞKENLER",
+            "// sayi: Sayısal değer tutar",
+            "// metin: Yazı tutar",
+            "// mantik: dogru veya yanlis tutar",
+            "",
+            "metin isim = \"Enes\"",
+            "sayi yas = 18",
+            "mantik ogrenci = dogru",
+            "",
+            "// 2. EKRANA YAZDIRMA",
+            "yaz(\"Merhaba \" + isim)",
+            "yaz(\"Yaşın:\")",
+            "yaz(yas)",
+            "",
+            "// 3. KOŞULLAR",
+            "// Koşul doğruysa ilk blok çalışır.",
+            "// Değilse ikinci blok çalışır.",
+            "",
+            "eger yas >= 18 {",
+            "\tyaz(\"Reşitsin!\")",
+            "} degilse {",
+            "\tyaz(\"Henüz reşit değilsin.\")",
+            "}",
+            "",
+            "// 4. DÖNGÜLER",
+            "// Bu örnek 1'den 5'e kadar sayar.",
+            "",
+            "sayi sayac = 1",
+            "",
+            "dongu sayac <= 5 {",
+            "\tyaz(sayac)",
+            "\tsayac = sayac + 1",
+            "}",
+            "",
+            "// 5. MATEMATİKSEL İŞLEMLER",
+            "sayi toplam = 10 + 20",
+            "sayi carpim = 5 * 4",
+            "",
+            "yaz(\"Toplam:\")",
+            "yaz(toplam)",
+            "yaz(\"Çarpım:\")",
+            "yaz(carpim)",
+            "",
+            "// ========================================",
+            "// Tebrikler! İlk ALGOR programını yazdın.",
+            "// ========================================"
+        ],
+        "description": "Açıklamalı ALGOR başlangıç programı"
+    },
+    "ALGOR Sayı Değişkeni": {
+        "prefix": "sayi",
+        "body": [
+            "sayi ${1:isim} = ${2:0}"
+        ],
+        "description": "Sayı değişkeni oluşturur"
+    },
+    "ALGOR Metin Değişkeni": {
+        "prefix": "metin",
+        "body": [
+            "metin ${1:isim} = \"${2:Merhaba}\""
+        ],
+        "description": "Metin değişkeni oluşturur"
+    },
+    "ALGOR Mantık Değişkeni": {
+        "prefix": "mantik",
+        "body": [
+            "mantik ${1:aktif} = dogru"
+        ],
+        "description": "Mantıksal değişken oluşturur"
+    },
+    "ALGOR Yazdırma": {
+        "prefix": "yaz",
+        "body": [
+            "yaz(${1:isim})"
+        ],
+        "description": "Ekrana çıktı verir"
+    },
+    "ALGOR Koşul": {
+        "prefix": "eger",
+        "body": [
+            "eger ${1:kosul} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Koşul bloğu oluşturur"
+    },
+    "ALGOR Döngü": {
+        "prefix": "dongu",
+        "body": [
+            "dongu ${1:kosul} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Döngü oluşturur"
+    },
+    "ALGOR Fonksiyon": {
+        "prefix": "fonksiyon",
+        "body": [
+            "fonksiyon ${1:fonksiyonAdi}(${2:sayi deger}) {",
+            "\t$0",
+            "\tdondur ${3:deger}",
+            "}"
+        ],
+        "description": "Parametre alan ve değer döndüren fonksiyon oluşturur"
+    },
+    "ALGOR Değer Döndür": {
+        "prefix": "dondur",
+        "body": [
+            "dondur ${1:deger}"
+        ],
+        "description": "Fonksiyondan değer döndürür"
+    },
+    "ALGOR Fonksiyon Çağırma": {
+        "prefix": "cagir",
+        "body": [
+            "${1:fonksiyonAdi}(${2:arguman})"
+        ],
+        "description": "Bir ALGOR fonksiyonunu çağırır"
+    },
+    "ALGOR Sec Durum": {
+        "prefix": "sec",
+        "body": [
+            "sec ${1:deger} {",
+            "\tdurum ${2:1} {",
+            "\t\t$0",
+            "\t}",
+            "\tvarsayilan {",
+            "\t\t",
+            "\t}",
+            "}"
+        ],
+        "description": "Çoklu koşul yapısı oluşturur"
+    },
+    "ALGOR Her Döngüsü": {
+        "prefix": "her",
+        "body": [
+            "her ${1:eleman} icinde ${2:dizi} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Dizinin elemanları üzerinde dolaşır"
+    },
+    "ALGOR Sayı Aralığı": {
+        "prefix": "aralik",
+        "body": [
+            "sayi[] ${1:sayilar} = aralik(${2:1}, ${3:10})"
+        ],
+        "description": "Belirtilen aralıkta sayı dizisi üretir"
+    },
+    "ALGOR Rastgele Sayı": {
+        "prefix": "rastgele",
+        "body": [
+            "sayi ${1:deger} = rastgele(${2:1}, ${3:100})"
+        ],
+        "description": "Belirtilen sınırlar arasında rastgele tam sayı üretir"
+    },
+    "ALGOR Mod İşlemi": {
+        "prefix": "mod",
+        "body": [
+            "${1:sayi1} mod ${2:sayi2}"
+        ],
+        "description": "Bölme işleminden kalanı hesaplar"
+    },
+    "ALGOR Mantıksal İşlemler": {
+        "prefix": "mantiksal",
+        "body": [
+            "mantik ${1:sonuc} = ${2:dogru} ve ${3:yanlis}"
+        ],
+        "description": "ve / veya mantıksal işlemlerini kullanır"
+    },
+    "ALGOR Modül Aktar": {
+        "prefix": "aktar",
+        "body": [
+            "aktar \"${1:dosya.algor}\""
+        ],
+        "description": "Başka bir ALGOR dosyasını içe aktarır"
+    },
+    "ALGOR Dışa Açık Fonksiyon": {
+        "prefix": "disari",
+        "body": [
+            "disari fonksiyon ${1:fonksiyonAdi}(${2:sayi deger}) {",
+            "\t$0",
+            "\tdondur ${3:deger}",
+            "}"
+        ],
+        "description": "Fonksiyonu başka dosyalardan kullanılabilir yapar"
+    }
+}
