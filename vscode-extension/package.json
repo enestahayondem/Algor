@@ -3,7 +3,7 @@
   "displayName": "ALGOR Programming Language",
   "description": "ALGOR programlama dili için resmi VS Code desteği",
   "icon": "algor-logo-128.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "AlgorProgramming",
   "engines": {
     "vscode": "^1.80.0"
@@ -95,6 +95,9 @@
     "url": "https://github.com/enestahayondem/Algor.git"
   },
   "license": "MIT",
+  "dependencies": {
+    "@enestaha/algor": "^1.0.0"
+  },
   "main": "./extension.js",
   "activationEvents": [
     "onLanguage:algor",
