@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install extension dependencies
+        working-directory: vscode-extension
+        run: npm ci
 
       - name: Publish to VS Code Marketplace
         working-directory: vscode-extension

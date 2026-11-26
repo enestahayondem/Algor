@@ -26,7 +26,10 @@ function activate(context) {
 
             const cliPath = path.join(
                 context.extensionPath,
-                "runtime",
+                "node_modules",
+                "@enestaha",
+                "algor",
+                "src",
                 "cli.js"
             );
 

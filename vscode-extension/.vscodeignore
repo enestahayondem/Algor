@@ -1,3 +1,5 @@
 *.vsix
 .vscode/**
+runtime/**
 node_modules/**
+!node_modules/@enestaha/algor/**
